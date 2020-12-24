@@ -12,7 +12,7 @@ def generate(maxChar, limite, ch):
 
     estado = True
     while estado:
-        for s in itertools.combinations_with_replacement(ch, maxChar):
+        for s in itertools.product(ch, repeat = maxChar):
             i = ''.join(s)
             yield i
         maxChar += 1
