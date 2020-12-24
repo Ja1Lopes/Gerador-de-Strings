@@ -6,7 +6,6 @@ caminho = os.environ['HOMEPATH']
 diretorio = 'C:' + caminho + '\\Desktop\\'
 file = diretorio + 'Strings.txt'
 
-ch = string.ascii_letters + string.digits + string.punctuation
 arq = open(file, 'w+')
 
 def generate(maxChar, limite, ch): 
